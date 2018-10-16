@@ -1,0 +1,201 @@
+/* common css start */
+body{
+  color: #666;
+  font-family: "微软雅黑";
+}
+a{
+  color: #666;
+}
+a:hover{
+  color: #666;
+  text-decoration: none;
+}
+.m_l{
+  margin-left: 10px;
+}
+@font-face {
+	font-family:'wjs';
+	src: url(../fonts/MiFie-Web-Font.eot) format('embbeded-opentype'),
+  url(../fonts/MiFie-Web-Font.svg) format('svg'),
+  url(../fonts/MiFie-Web-Font.ttf)format('truetype'),
+  url(../fonts/MiFie-Web-Font.woff)format('woff')
+}
+.wjs_icon{
+    font-family: wjs;
+}
+.wjs_icon_phone::before{
+    content:"\e908";
+}
+.wjs_icon_tel::before{
+    content:"\e909";
+}
+.wjs_icon_logo::before{
+    content:"\e920";
+    font-size:50px;
+    color:#e92322;
+    vertical-align: middle;
+}
+.wjs_icon_word::before{
+    content:"\e93e";
+    font-size:36px;
+    vertical-align: middle;
+}
+.wjs_icon_e903::before{
+  content: "\e903";
+  font-size: 36px;
+}
+/* common css end */
+/* header start */
+.wjs_topBar{
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.wjs_topBar>.container>.row div+div{
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-left: 1px solid #ccc;
+}
+.wjs_topBar .wjs_app{
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.wjs_topBar .wjs_app img{
+  display: none;
+}
+.wjs_topBar .wjs_app:hover img{
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  display: block;
+  margin-left: -60px;
+  z-index: 10;
+}
+.wjs_topBar .wjs_register{
+  background-color: #e92322;
+  border: 1px solid #e92322;
+}
+/* header end */
+/* nav start */
+.wjs-navbar {
+    background-color: #fff;
+    border: none;
+    margin-bottom:0;
+}
+.wjs-navbar .navbar-brand {
+    color: #777;
+}
+.wjs-navbar .navbar-brand:hover,
+.wjs-navbar .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.wjs-navbar .navbar-text {
+    color: #777;
+}
+.wjs-navbar .navbar-nav > li > a {
+    color: #666;
+    background-color:#fff;
+    border-bottom:3px solid transparent;
+}
+.wjs-navbar .navbar-nav > li > a:hover,
+.wjs-navbar .navbar-nav > li > a:focus {
+    color: #666;
+    background-color: transparent;
+    border-bottom:3px solid #e92322;
+}
+.wjs-navbar .navbar-nav > .active > a,
+.wjs-navbar .navbar-nav > .active > a:hover,
+.wjs-navbar .navbar-nav > .active > a:focus {
+    color: #666;
+    background-color: #fff;
+    border-bottom:3px solid #e92322;
+}
+.wjs-navbar .navbar-nav > .disabled > a,
+.wjs-navbar .navbar-nav > .disabled > a:hover,
+.wjs-navbar .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.wjs-navbar .navbar-toggle {
+    border-color: #ddd;
+}
+.wjs-navbar .navbar-toggle:hover,
+.wjs-navbar .navbar-toggle:focus {
+    background-color: #ddd;
+}
+.wjs-navbar .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.wjs-navbar .navbar-collapse,
+.wjs-navbar .navbar-form {
+    border-color: #e7e7e7;
+}
+.wjs-navbar .navbar-nav > .open > a,
+.wjs-navbar .navbar-nav > .open > a:hover,
+.wjs-navbar .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+    .wjs-navbar .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .wjs-navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+    .wjs-navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .wjs-navbar .navbar-nav .open .dropdown-menu > .active > a,
+    .wjs-navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .wjs-navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .wjs-navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+    .wjs-navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .wjs-navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.wjs-navbar .navbar-link {
+    color: #777;
+}
+.wjs-navbar .navbar-link:hover {
+    color: #333;
+}
+.wjs-navbar .btn-link {
+    color: #777;
+}
+.wjs-navbar .btn-link:hover,
+.wjs-navbar .btn-link:focus {
+    color: #333;
+}
+.wjs-navbar .btn-link[disabled]:hover,
+fieldset[disabled] .wjs-navbar .btn-link:hover,
+.wjs-navbar .btn-link[disabled]:focus,
+fieldset[disabled] .wjs-navbar .btn-link:focus {
+    color: #ccc;
+}
+/* nav end */
+/* slider start */
+.wjs_banner .big{
+    height: 410px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.wjs_banner .small{
+    display: block;
+    width:100%;
+}
+/* slider end */
+.wjs_info{
+  margin-top: 20px;
+}
+.wjs_info>.container>.row a{
+  
+}
